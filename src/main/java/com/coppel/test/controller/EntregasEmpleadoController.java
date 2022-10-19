@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.coppel.test.model.Entregas;
-import com.coppel.test.service.EntregasService;
+import com.coppel.test.service.IEntregasService;
 
 import lombok.RequiredArgsConstructor;
 
@@ -21,7 +21,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class EntregasEmpleadoController {
 
-	@Autowired EntregasService entregasService;
+	@Autowired IEntregasService entregasService;
 	@PostMapping
 	public ResponseEntity<Entregas> saveEntrega(@RequestBody Entregas ent) { 	
 	        return  ResponseEntity.ok(entregasService.saveEntrega(ent));	        

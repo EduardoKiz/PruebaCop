@@ -1,4 +1,4 @@
-package com.coppel.test.service;
+package com.coppel.test.service.imp;
 
 import java.util.List;
 
@@ -7,9 +7,10 @@ import org.springframework.stereotype.Service;
 
 import com.coppel.test.model.Entregas;
 import com.coppel.test.repository.EntregasRepository;
+import com.coppel.test.service.IEntregasService;
 
 @Service
-public class EntregasService {
+public class EntregasService implements IEntregasService{
 
 	@Autowired EntregasRepository entregasRepository;
 	

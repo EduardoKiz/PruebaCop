@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.coppel.test.model.Role;
-import com.coppel.test.service.RoleService;
+import com.coppel.test.service.IRolService;
 
 import lombok.RequiredArgsConstructor;
 
@@ -21,7 +21,7 @@ import lombok.RequiredArgsConstructor;
 public class RoleController {
 
 	
-	private final RoleService roleService;
+	private final IRolService roleService;
 
     @GetMapping("/all")
     public ResponseEntity<List<Role>> findAllEmpleados() {

@@ -1,4 +1,4 @@
-package com.coppel.test.service;
+package com.coppel.test.service.imp;
 
 
 import java.util.List;
@@ -17,9 +17,10 @@ import com.coppel.test.repository.EntregasRepository;
 import com.coppel.test.repository.RoleRepository;
 import com.coppel.test.repository.SueldoEmpleadoRepository;
 import com.coppel.test.repository.SueldosConfigRepository;
+import com.coppel.test.service.ISueldoEmpleadoService;
 
 @Service
-public class SueldoEmpleadoService {
+public class SueldoEmpleadoService implements ISueldoEmpleadoService{
 
 	@Autowired SueldoEmpleadoRepository sueldoEmpleadoRepository;
 	@Autowired EntregasRepository entregasRepository;

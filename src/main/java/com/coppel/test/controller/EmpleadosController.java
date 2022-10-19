@@ -6,13 +6,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.coppel.test.model.Empleado;
-import com.coppel.test.service.EmpleadosService;
+import com.coppel.test.service.IEmpleadoService;
 
 import lombok.RequiredArgsConstructor;
 
@@ -22,7 +21,7 @@ import lombok.RequiredArgsConstructor;
 public class EmpleadosController {
 
 	
-	private final EmpleadosService empleadoService;
+	private final IEmpleadoService empleadoService;
 
     @GetMapping("/all")
     public ResponseEntity<List<Empleado>> findAllEmpleados() {

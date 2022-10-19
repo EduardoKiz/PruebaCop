@@ -12,7 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.coppel.test.model.SueldoEmpleado;
 import com.coppel.test.model.SueldoMensualDetalle;
-import com.coppel.test.service.SueldoEmpleadoService;
+import com.coppel.test.service.ISueldoEmpleadoService;
+import com.coppel.test.service.imp.SueldoEmpleadoService;
 
 import lombok.RequiredArgsConstructor;
 
@@ -21,7 +22,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class SueldoEmpleadoController {
 
-	@Autowired SueldoEmpleadoService sueldoEmpleadoService;
+	@Autowired ISueldoEmpleadoService sueldoEmpleadoService;
 	
 	
     @GetMapping("/{idEmpleado}/{mes}/{anio}")
