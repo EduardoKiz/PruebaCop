@@ -1,11 +1,11 @@
-INSERT INTO EMPLEADO(id, nombre, id_role, activo) VALUES(1, 'Javier Perez', 1, 1);
+INSERT INTO EMPLEADO(id, nombre, id_role, activo) VALUES(1, 'Javier Perez', 2, 1);
 INSERT INTO EMPLEADO(id, nombre, id_role, activo) VALUES(2, 'Saul', 2, 1);
 INSERT INTO EMPLEADO(id, nombre, id_role, activo) VALUES(3, 'Daniel', 3, 1);
 INSERT INTO EMPLEADO(id, nombre, id_role, activo) VALUES(4, 'Francisco', 1, 1);
 INSERT INTO EMPLEADO(id, nombre, id_role, activo) VALUES(5, 'Roberto', 1, 1);
 
-INSERT INTO ROLE(id, nombre ,bono_hora,sueldo_base) VALUES(1, 'Choferes', 10.0,30.0);
-INSERT INTO ROLE(id, nombre ,bono_hora,sueldo_base) VALUES(2, 'Cargadores', 5.0,30.0);
+INSERT INTO ROLE(id, nombre ,bono_hora,sueldo_base) VALUES(1, 'Choferes', 10.0,80.0);
+INSERT INTO ROLE(id, nombre ,bono_hora,sueldo_base) VALUES(2, 'Cargadores', 10.0,30.0);
 INSERT INTO ROLE(id, nombre ,bono_hora,sueldo_base) VALUES(3, 'Auxiliares', 0.0,30.0);
 
 

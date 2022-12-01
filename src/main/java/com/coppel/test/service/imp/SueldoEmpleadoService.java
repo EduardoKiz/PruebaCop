@@ -35,7 +35,7 @@ public class SueldoEmpleadoService implements ISueldoEmpleadoService{
     	List<Entregas> entregas=
     			entregasRepository.findByIdEmpleadoAndMes(idEmpleado, mes, anio);
     	
-    	Role rol= roleRepository.findById(emp.getIdRole()).get();
+    	Role rol= roleRepository.findById(emp.getIdRole()).get()!=null?roleRepository.findById(emp.getIdRole()).get():new Role();
     	
     	SueldosConfig sueldoConfig= sueldosConfigRepository.findById(1L).get();
     	for (Entregas ent : entregas) {

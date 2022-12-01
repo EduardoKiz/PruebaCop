@@ -9,11 +9,13 @@ import javax.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import lombok.experimental.SuperBuilder;
 
 @Getter
 @Setter
 @ToString
 @Entity
+@SuperBuilder
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,6 +23,9 @@ public class Role {
 	private String nombre;
 	private Double bonoHora;
 	private Double sueldoBase;
+	public Role() {
+		super();
+	}
 
 	
 }
