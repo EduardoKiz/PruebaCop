@@ -22,7 +22,7 @@ public class EmpleadosController {
 
 	
 	private final IEmpleadoService empleadoService;
-
+//agregar cambios .
     @GetMapping("/all")
     public ResponseEntity<List<Empleado>> findAllEmpleados() {
         return ResponseEntity.ok(empleadoService.findAllEmpleados());
